@@ -1,5 +1,5 @@
 function botone(){
-    let text = "TEXto"
+    let text = "TEXXto"
 
     if(text == text.toLowerCase())
 
