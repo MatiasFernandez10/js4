@@ -6,4 +6,5 @@ function boton(){
         y = x
     }
     console.log(y)
+    
 }
