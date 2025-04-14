@@ -1,6 +1,6 @@
 function boton(){
     var valores = [true, 5, false, "hola", "adios",2];
-    var bool1 = valores[0]
+    var bool1 = valores[0];
 
     if(valores[3] > valores[4])
         console.log("la palabra mayor es "+ valores[3]);
