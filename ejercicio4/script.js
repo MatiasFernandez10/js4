@@ -10,4 +10,5 @@ function boton(){
             console.log("El dni proporcionado corresponde correctamente a la letra "+letras)
         if(letra !== letras)
             console.log("la letra correspondiente al dni proporcionado no coincide con la letra proporcionada")
+    
 }
