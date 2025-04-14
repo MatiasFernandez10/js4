@@ -1,25 +1,17 @@
-function botone() {
-    let text = 'La ruta nos aporto otro paso natural';
-    
-    let arr = text.replaceAll(' ', '').toLowerCase().split('');
+function boton(){
+    let text = prompt("Indroduzca una oracion polindromo")
+    let arr = (text.replaceAll(' ','')).split(''), matches=0, i=0, u=(arr.length-1)
 
-    let i = 0;           
-    let j = arr.length - 1; 
-    let isPalindrome = true;  
-
-    while (i < j) {
-        if (arr[i] !== arr[j]) {
-            isPalindrome = false;  
-            break;  
-        }
-        i++;
-        j--;
+    while(i<=arr.length){
+        if(arr[i] == arr[u])
+            matches++
+        i++
+        u--
     }
 
-    
-    if (isPalindrome) {
-        console.log("Es un palíndromo");
-    } else {
-        console.log("No es un palíndromo");
-    }
+    if(arr.length-1 == matches)
+        console.log("El texto proporcionado es un políndromo")
+
+    if(arr.length-1 !== matches)
+        console.log("El texto proporcionado no es un políndromo")
 }
